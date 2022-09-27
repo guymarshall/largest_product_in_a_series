@@ -58,6 +58,8 @@ fn main() {
             if product > largest_product {
                 largest_product = product;
             }
+
+            i += 1;
         }
     }
 }
