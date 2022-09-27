@@ -62,4 +62,6 @@ fn main() {
             i += 1;
         }
     }
+
+    println!("Largest product: {}", largest_product);
 }
