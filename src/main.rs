@@ -38,8 +38,6 @@ fn main() {
     let number_of_digits = 3;
     let largest_product = 0;
 
-    println!("{:?}", digits);
-
     let mut running: bool = true;
     let mut largest_product: i32 = 0;
 
