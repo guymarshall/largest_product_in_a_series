@@ -35,9 +35,6 @@ fn main() {
         digits.push(digit as i32);
     }
 
-    let number_of_digits = 3;
-    let largest_product = 0;
-
     let mut running: bool = true;
     let mut largest_product: i32 = 0;
 
@@ -49,9 +46,8 @@ fn main() {
                 running = false;
                 break;
             }
-            let slice: Range<i32> = i..i + size_of_slice;
+            let slice: Range<i32> = digits[i as usize]..digits[(i + size_of_slice) as usize];
 
-            // This line below is incorrect, it needs to iterate through the digits of the size size_of_slice, not the digits in the slice itself
             for number in slice {
                 product *= number;
             }
