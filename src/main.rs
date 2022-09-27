@@ -51,6 +51,7 @@ fn main() {
             }
             let slice: Range<i32> = i..i + size_of_slice;
 
+            // This line below is incorrect, it needs to iterate through the digits of the size size_of_slice, not the digits in the slice itself
             for number in slice {
                 product *= number;
             }
