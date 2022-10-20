@@ -38,9 +38,8 @@ fn main() {
 
     while running {
         let mut i: i128 = 0;
-        let mut product: i128 = 1;
         for _digit in digits.iter() {
-            product = 1;
+            let mut product: i128 = 1;
             if i + size_of_slice > digits.len().try_into().unwrap() {
                 running = false;
                 break;
